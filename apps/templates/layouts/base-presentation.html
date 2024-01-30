@@ -1,0 +1,88 @@
+<!--
+
+=========================================================
+* Enterprise Search Pro - 
+=========================================================
+
+* Product Page: https://Enterprise Search.co.uk
+* Copyright 2023 Airgas (https://www.airgas.com)
+* License (https://www.airgas.com)
+
+* Designed and coded by Airgas
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Primary Meta Tags -->
+<title>
+    Enterprise Search - {% block title %}{% endblock %} | Airgas
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Enterprise Search AI Powered Search">
+<meta name="author" content="Airgas">
+<meta name="description" content="Enterprise Search AI Powered Search.">
+<meta name="keywords" content="Enterprise Search AI Powered Search" />
+<link rel="canonical" href="https://www.airgas.com">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="Enterprise Search AI Powered Search">
+<meta property="og:title" content="Enterprise Search AI Powered Search">
+<meta property="og:description" content="Enterprise Search AI Powered Search">
+<meta property="og:image" content="https://www.airgas.com">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="Enterprise Search AI Powered Search">
+<meta property="twitter:url" content="Enterprise Search AI Powered Search">
+<meta property="twitter:title" content="Enterprise Search AI Powered Search">
+<meta property="twitter:description" content="Enterprise Search AI Powered Search">
+<meta property="twitter:image" content="https://www.airgas.com">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="120x120" href="/static/assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/assets/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/static/assets/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="/static/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<link type="text/css" href="/static/assets/vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+<link type="text/css" href="/static/assets/vendor/notyf/notyf.min.css" rel="stylesheet">
+<link type="text/css" href="/static/assets/vendor/fullcalendar/main.min.css" rel="stylesheet">
+<link type="text/css" href="/static/assets/vendor/apexcharts/dist/apexcharts.css" rel="stylesheet">
+<link type="text/css" href="/static/assets/vendor/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+<link type="text/css" href="/static/assets/vendor/choices.js/public/assets/styles/choices.min.css" rel="stylesheet">
+<link type="text/css" href="/static/assets/vendor/leaflet/dist/leaflet.css" rel="stylesheet">
+
+<!-- Volt CSS -->
+<link type="text/css" href="/static/assets/css/volt.min.css" rel="stylesheet">
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+</head>
+<body>
+
+  {% include 'includes/navigation-presentation.html' %}
+
+  {% block content %}{% endblock content %}
+
+  {% include 'includes/footer-presentation.html' %}
+
+  {% include 'includes/scripts.html' %}
+
+    <!-- Specific Page JS goes HERE  -->
+    {% block javascripts %}{% endblock javascripts %}
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+
+body {
+    background-color: bisque
+}
+
+.container {
+    margin: 30px auto
+}
+*/
+
+.navbar-nav .nav-link {
+    color: #000 !important;
+    padding: 0.5rem 0rem !important;
+    border-color: transparent;
+    margin-left: 1.5rem;
+    transition: none
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none
+}
+
+.navbar-nav .nav-link.active,
+.border-red {
+    border-bottom: 3px solid #b71c1c
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #b71c1c
+}
+
+.container .product-item {
+    min-height: 450px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0
+}
+
+.container .product-item .product {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.container .product-item .product img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover
+}
+
+.container .product-item .product .icons .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease;
+    transform: rotate(180deg);
+    cursor: pointer
+}
+
+.container .product-item .product .icons .icon:hover {
+    background-color: #b71c1c;
+    color: #fff
+}
+
+.container .product-item .product .icons .icon:nth-last-of-type(3) {
+    transition-delay: 0.2s
+}
+
+.container .product-item .product .icons .icon:nth-last-of-type(2) {
+    transition-delay: 0.15s
+}
+
+.container .product-item .product .icons .icon:nth-last-of-type(1) {
+    transition-delay: 0.1s
+}
+
+.container .product-item:hover .product .icons .icon {
+    transform: translateY(-60px)
+}
+
+.container .product-item .tag {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 0 0.4rem
+}
+
+.container .product-item .title {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px
+}
+
+.container .product-item .fa-star {
+    font-size: 0.65rem;
+    color: goldenrod
+}
+
+.container .product-item .price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600
+}
+
+.fw-800 {
+    font-weight: 800
+}
+
+.bg-green {
+    background-color: #208f20 !important;
+    color: #fff
+}
+
+.bg-black {
+    background-color: #1f1d1d;
+    color: #fff
+}
+
+.bg-red {
+    background-color: #bb3535;
+    color: #fff
+}
+
+@media (max-width: 767.5px) {
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link:hover {
+        background-color: #b71c1c;
+        color: #fff !important
+    }
+
+    .navbar-nav .nav-link {
+        border: 3px solid transparent;
+        margin: 0.8rem 0;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center
+    }
+}
+
+
+.card-custom tbody tr {
+   float: left;
+   width: 17rem;
+   min-height: 310px;
+   margin: 0.5rem;
+   border: 0.0625rem solid rgba(0, 0, 0, .125);
+   border-radius: .25rem;
+   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card-custom tbody td {
+   display: block;
+}
+
+.card-custom thead {
+   display: none;
+}
+
+.card-custom td:before {
+   content: attr(data-label);
+   position: relative;
+   float: left;
+   color: #808080;
+   min-width: 4rem;
+   margin-left: 0;
+   margin-right: 1rem;
+   text-align: left;
+}
+
+
+.card-custom .avatar {
+   width: 150px;
+   margin: 15px;
+}
+
+.card-custom1 tr:hover{
+    box-shadow: 2px 2px 2px grey;
+}
+
+.card-custom tr:hover{
+    box-shadow: 2px 2px 1px #C6C6C6;
+    transform: scale(1.02);
+}
+
+.table-custom td,
+.table-custom th {
+  }
+
+.table-custom tbody tr:first-child td,
+.table-custom tbody tr:first-child th {
+   }
+
+.table-custom tbody tr:last-child td,
+.table-custom tbody tr:last-child th {
+   }
+
+.height155 {
+  height: 155px;
+}
+
+.height78 {
+  height: 78px;
+}
+
+.loading-spinner {
+    display: none;
+    margin-left: 412px; /* Adjust as needed */
+}
+
+.loading-spinner-cj {
+    display: none;
+    margin-left: 412px; /* Adjust as needed */
+}
+
+/* Style for active tab */
+#progressTabs .nav-link.active {
+	background-color: #FFFFFF; /* Change to your desired color */
+}
+
+/* Style for inactive tabs */
+#progressTabs .nav-link:not(.active) {
+	background-color: #F2F4F6; /* Change to your desired color */
+}
+
+.tab2-content {
+display: none; 
+}
+
+.active .tab1-content {
+display: none;
+}
+
+.active .tab2-content {
+display: block;
+}
+
+/* Style for active tab */
+#searchDemoTabs .nav-link.active {
+	background-color: #FFFFFF; /* Change to your desired color */
+}
+
+/* Style for inactive tabs */
+#searchDemoTabs .nav-link:not(.active) {
+	background-color: #F2F4F6; /* Change to your desired color */
+}
+
+table.dataTable tbody {
+   background-color:#f7f9fa !important;
+}
+
+table.dataTable tbody tr:hover {
+   background-color:#fff !important;
+}
+
+table.dataTable th {
+  color:#fff !important;
+}
+
+table.dataTable th {
+  background-color:#006072 !important;
+}
+
+div.dataTables_wrapper {
+        width: 100%;
+        margin: 0 auto;
+		font-size:14px;
+    }
+
+
+table.dataTable thead {
+  font-size: 14px;
+}
+
+table.dataTable td:nth-child(1){
+  white-space: nowrap;
+}
+
+
+
